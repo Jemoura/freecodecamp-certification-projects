@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1 id="title">Pesquisa de Opinião</h1>
+	<p id="description">Agradecemos a sua participação</p>
+	<form id="survey-form">
+	  <label class="label" for="name" id="name-label">Nome</label>
+	  <input type="text" id="name" placeholder="Enter your name" required>
+	  <label class="label" for="email" id="email-label">E-mail</label>
+	  <input type="email" id="email" placeholder="Enter your e-mail" required>
+	  <label class="label" for="number" id="number-label">Idade</label>
+	  <input type="number" id="number" size="5" placeholder="Age" min="16" max="99">
+	  
+	  <label class="label" for="dropdown">Escolha uma opção</label>
+	  <select name="dropdown" id="dropdown">
+	    <option value="1">Opção 1</option>
+	    <option value="2">Opção 2</option>
+	    <option value="3">Opção 3</option>
+	  </select>
+	  
+	  <label class="label">Escolha uma opção</label>
+	  <label for="choice-1"><input type="radio" class="radio-choice" value="1" id="choice-1" name="choice"> Choice 1</label>
+	  <label for="choice-2"><input type="radio" class="radio-choice" value="2" id="choice-2" name="choice"> Choice 2</label>
+	  <label for="choice-3"><input type="radio" class="radio-choice" value="3" id="choice-3" name="choice"> Choice 3</label>
+	  <label for="choice-4"><input type="radio" class="radio-choice" value="4" id="choice-4" name="choice"> Choice 4</label>
+	  
+	  <label class="label">Escolha uma opção</label>
+	  <label class="check-choice" for="escolha-1"><input type="checkbox" class="choice" value="1" id="escolha-1" name="another-choice"> Escolha 1</label>
+	  <label class="check-choice" for="escolha-2"><input type="checkbox"  value="2" id="escolha-2" name="another-choice"> Escolha 2</label>
+	  <label class="check-choice" for="escolha-3"><input type="checkbox" class="choice" value="3" id="escolha-3" name="another-choice"> Escolha 3</label>
+	  <label class="check-choice" for="escolha-4"><input type="checkbox" class="choice" value="4" id="escolha-4" name="another-choice"> Escolha 4</label>
+	  
+	  <label class="label" for="comments">Additional comments (optional)</label>
+	  <textarea id="comments" size="500"></textarea>
+	  
+	  <button id="submit">Submit</button>
+	  
+	</form>
+
+</body>
+</html>
