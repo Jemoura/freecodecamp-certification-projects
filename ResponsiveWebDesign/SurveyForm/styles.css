@@ -1,23 +1,27 @@
 
-* {
-  font-family: "Courier New", sans-serif;
+body {
+  font-family: "Verdana", sans-serif;
+  background-image: url("https://revistacapitaleconomico.com.br/wp-content/uploads/2019/11/melhor-lugar-para-se-morar-no-rio-de-janeiro.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
 
 #title {
   text-align: center;
-  font-size: 32px;
-  font-family: "Courier New", sans-serif;
+  font-size: 36px;
 }
 
 #description {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #survey-form {
   display: flex;
   flex-direction: column;
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 10px;
   color: white;
@@ -26,10 +30,12 @@
 
 #number {  
   align-self: flex-start;
+  width: 50px;
 }
 
-.label, .radio-choice {  
-  margin-top: 1rem;
+.label {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .radio-choice {
@@ -46,6 +52,12 @@
 #survey-form button {
   margin: 1rem 0rem 1.5rem 0rem;
   padding: 0.5rem;
+}
+
+#survey-form button {
+  background-color: rgb(54, 58, 61);
+  color: white;
+  text-transform: uppercase;
 }
 
 #comments {
