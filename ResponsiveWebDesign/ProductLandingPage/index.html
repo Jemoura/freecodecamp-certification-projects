@@ -4,64 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Bolos & Cia</title>
 </head>
 <body>
-    <header id="header">
-        <div id="marca">
-          <img id="header-img" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/649/4603551649_4b7d16d1-f195-42ec-b014-2223e7432571.png?cb=1612819790" alt="logo da bolos e cia.">
-        </div>    
-          <nav id="navbar" fixed>
-            <ul>
-              <li class="nav-link"><a href="products">Nossos Produtos</a></li>
-              <li class="nav-link"><a href="recipes">Receitas</a></li>
-              <li class="nav-link"><a href="prices">Preços</a></li>
-            </ul>
-          </nav>
-      </header>
-      
-      <div class="main-container">
-        <h2>Encomende já nossos deliciosos bolos!</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input id="email" type="email" placeholder="Digite seu e-mail">
-          <input id="submit" type="submit">
-        </form>
-        
-        <section id="products">
-          <div class="product-description-container"> 
-          <img src="https://www.flaticon.com/svg/vstatic/svg/2640/2640911.svg?token=exp=1612823183~hmac=7ee4d615fb5f9f4e1649d3c325ca6414" alt="">
-          <div class="product-description">
-            <h3>Receitas de família</h3>
-            <p>Nossos bolos seguem uma longa tradição familiar e garantidamente estão aptos a agradar gregos e troianos.</p>
-          </div>
-          </div>
-          <div class="product-description-container">
-            <img src="https://www.flaticon.com/svg/vstatic/svg/3448/3448117.svg?token=exp=1612822160~hmac=604f09518b504e05777faa2929b0ae80" alt="">
-          <div class="product-description">
-            <h3>Ingredientes de qualidade</h3>
-            <p>Utilizamos apenas ingredientes da mais alta qualidade para oferecer aos nossos clientes a melhor experiência degustativa de suas vidas.</p>
-          </div>
-          </div>
-          <div class="product-description-container">
-            <img src="https://www.flaticon.com/svg/vstatic/svg/2091/2091772.svg?token=exp=1612823152~hmac=a85cbee96a693623ca14e0ad24277b39" alt="">
-          <div class="product-description">
-            <h3>Os melhores preços do mercado</h3>
-            <p>Nossa loja possui a melhor tabela de preços do mercado. Os melhores bolos pelo menor preço você só encontra na Bolos & Cia.</p>
-          </div>
-          </div>
-          
-        </section>
-        <section id="recipes">
-          <iframe src="https://www.youtube.com/watch?v=V3rgpmqLJug"></iframe>
-        </section>
-        <section id="prices">
-          
-        </section>
-        
-        <footer id="footer">
-          
-        </footer>
+  <header id="header">
+    <div id="marca">
+      <img id="header-img" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/649/4603551649_4b7d16d1-f195-42ec-b014-2223e7432571.png?cb=1612819790" alt="logo da bolos e cia.">
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#products">Nossos Produtos</a></li>
+        <li><a class="nav-link" href="#recipes">Receitas</a></li>
+        <li><a class="nav-link" href="#prices">Preços</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="main-container">
+    <h2>Encomende já nossos deliciosos bolos!</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" name="email" type="email" placeholder="Digite seu e-mail">
+      <input id="submit" class="btn" type="submit">
+    </form>
+  
+    <section id="products">
+      <div class="product-description-container">
+        <div class="icon">
+          <i class="fas fa-5x fa-users"></i>
+        </div>
+        <div class="product-description">
+          <h3>Receitas de família</h3>
+          <p>Nossos bolos seguem uma longa tradição familiar e garantidamente estão aptos a agradar gregos e troianos.</p>
+        </div>
       </div>
+      <div class="product-description-container">
+        <div class="icon">
+          <i class="fas fa-5x fa-egg"></i>
+        </div>
+        <div class="product-description">
+          <h3>Ingredientes de qualidade</h3>
+          <p>Utilizamos apenas ingredientes da mais alta qualidade para oferecer aos nossos clientes a melhor experiência degustativa de suas vidas.</p>
+        </div>
+      </div>
+      <div class="product-description-container">
+        <div class="icon">
+          <i class="fas fa-5x fa-hand-holding-usd"></i>
+        </div>
+        <div class="product-description">
+          <h3>Os melhores preços do mercado</h3>
+          <p>Nossa loja possui a melhor tabela de preços do mercado. Os melhores bolos pelo menor preço você só encontra na Bolos & Cia.</p>
+        </div>
+      </div>
+  
+    </section>
+    <section id="recipes">
+      <iframe id="video" src="https://www.youtube.com/embed/V3rgpmqLJug"></iframe>
+    </section>
+    <section id="prices">
+      <div class="product-card">
+        <h3 class="product-name">Bolo de Laranja</h3>
+        <p class="product-paragraph">Delicioso bolo de laranja feito com laranjas doces e suculentas para o deleite de toda a família. É impossível comer só um pedaço!</p>
+        <p class="product-price">R$ 35,00</p>
+        <button class="btn">COMPRAR</button>
+      </div>
+      <div class="product-card">
+        <h3 class="product-name">Bolo de Banana</h3>
+        <p class="product-paragraph">Fofinho e saboroso. Sua doçura é incomparável. Ideal para o lanche da tarde acompanhado de um bom café e de uma roda de pessoas queridas.</p>
+        <p class="product-price">R$ 30,00</p>
+        <button class="btn">COMPRAR</button>
+      </div>
+      <div class="product-card">
+        <h3 class="product-name">Bolo de Chocolate</h3>
+        <p class="product-paragraph">Nada mais tradicional do que o famoso bolo de chocolate. Adorado por crianças e adultos, é a melhor pedida para quem quer se aventurar sem riscos.</p>
+        <p class="product-price">R$ 40,00</p>
+        <button class="btn">COMPRAR</button>
+      </div>
+    </section>
+  </div>
+  <footer id="footer">
+    <ul>
+      <li><a href="#"> Institucional</a></li>
+      <li><a href="#">Fale Conosco</a></li>
+    </ul>
+    <p>&copy2021 - Bolos & Cia</p>
+  </footer>
     
 </body>
 </html>
