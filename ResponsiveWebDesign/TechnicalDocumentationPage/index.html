@@ -1,123 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Technical Documentation Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav id="navbar">
-          <header>Table of Contents</header>
-          <a href="#what's_ruby" class="nav-link">What's Ruby</a>
-          <a href="#features_of_ruby" class="nav-link">Features of Ruby</a>
-          <a href="#how_to_get_ruby" class="nav-link">How to get Ruby</a>
-          <a href="#git" class="nav-link">Git</a>
-          <a href="#subversion" class="nav-link">Subversion</a>
-          <a href="#ruby_home_page" class="nav-link">Ruby home page</a>
-          <a href="#mailing_list" class="nav-link">Mailing list</a>
-          <a href="#how_to_compile_and_install" class="nav-link">How to compile and install</a>
-          <a href="#copying" class="nav-link">Copying</a>
-          <a href="#feedback" class="nav-link">Feedback</a>
-          <a href="#contributing" class="nav-link">Contributing</a>
-          <a href="#the_author" class="nav-link">The Author</a>
-        </nav>
-        
-        <main id="main-doc">
-          <section class="main-section" id="what's_ruby">
-            <header>What's Ruby</header>
-            <p>Ruby is an interpreted object-oriented programming language often used for web development. It also offers many scripting features to process plain text and serialized files, or manage system tasks. It is simple, straightforward, and extensible.</p>
-          </section>
-          <section class="main-section" id="features_of_ruby">
-            <header>Features of Ruby</header>
-            <ul>
-              <li>Simple Syntax</li>
-              <li><strong>Normal</strong> Object-oriented Features (e.g. class, method calls)</li>
-              <li><strong>Advanced</strong> Object-oriented Features (e.g. mix-in, singleton-method)</li>
-              <li>Operator Overloading</li>
-              <li><span class="highlight"><a href="https://docs.ruby-lang.org/en/3.0.0/Exception.html">Exception</a></span> Handling</li>
-              <li>Iterators and Closures</li>
-              <li>Garbage Collection</li>
-              <li>Dynamic Loading of <span class="highlight"><a href="https://docs.ruby-lang.org/en/3.0.0/Exception.html">Object</a></span> Files (on some architectures)</li>
-            </ul>
-          </section>
-          <section class="main-section" id="how_to_get_ruby">
-            <header>How to get Ruby</header>
-            <p>For a complete list of ways to install Ruby, including using third-party tools like rvm, see:</p>
-            <a href="www.ruby-lang.org/en/downloads/">www.ruby-lang.org/en/downloads/</a>
-          </section>
-          <section class="main-section" id="git">
-            <header>Git</header>
-            <p>The mirror of the Ruby source tree can be checked out with the following command:</p>
+      <nav id="navbar">
+        <header>Ruby Documentation</header>
+        <a href="#what's_ruby" class="nav-link">What's Ruby</a>
+        <a href="#features_of_ruby" class="nav-link">Features of Ruby</a>
+        <a href="#how_to_get_ruby" class="nav-link">How to get Ruby</a>
+        <a href="#git" class="nav-link">Git</a>
+        <a href="#subversion" class="nav-link">Subversion</a>
+        <a href="#ruby_home_page" class="nav-link">Ruby home page</a>
+        <a href="#mailing_list" class="nav-link">Mailing list</a>
+        <a href="#how_to_compile_and_install" class="nav-link"
+          >How to compile and install</a
+        >
+        <a href="#copying" class="nav-link">Copying</a>
+        <a href="#feedback" class="nav-link">Feedback</a>
+        <a href="#contributing" class="nav-link">Contributing</a>
+        <a href="#the_author" class="nav-link">The Author</a>
+      </nav>
+
+      <main id="main-doc">
+        <section class="main-section" id="what's_ruby">
+          <header>What's Ruby</header>
+          <p>
+            Ruby is an interpreted object-oriented programming language often
+            used for web development. It also offers many scripting features to
+            process plain text and serialized files, or manage system tasks. It
+            is simple, straightforward, and extensible.
+          </p>
+        </section>
+        <section class="main-section" id="features_of_ruby">
+          <header>Features of Ruby</header>
+          <ul>
+            <li>Simple Syntax</li>
+            <li>
+              <strong>Normal</strong> Object-oriented Features (e.g. class,
+              method calls)
+            </li>
+            <li>
+              <strong>Advanced</strong> Object-oriented Features (e.g. mix-in,
+              singleton-method)
+            </li>
+            <li>Operator Overloading</li>
+            <li>
+              <span class="highlight"
+                ><a href="https://docs.ruby-lang.org/en/3.0.0/Exception.html"
+                  >Exception</a
+                ></span
+              >
+              Handling
+            </li>
+            <li>Iterators and Closures</li>
+            <li>Garbage Collection</li>
+            <li>
+              Dynamic Loading of
+              <span class="highlight"
+                ><a href="https://docs.ruby-lang.org/en/3.0.0/Exception.html"
+                  >Object</a
+                ></span
+              >
+              Files (on some architectures)
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="how_to_get_ruby">
+          <header>How to get Ruby</header>
+          <p>
+            For a complete list of ways to install Ruby, including using
+            third-party tools like rvm, see:
+          </p>
+          <a href="www.ruby-lang.org/en/downloads/"
+            >www.ruby-lang.org/en/downloads/</a
+          >
+        </section>
+        <section class="main-section" id="git">
+          <header>Git</header>
+          <p>
+            The mirror of the Ruby source tree can be checked out with the
+            following command:
+          </p>
+          <div class="code">
             <code>$ git clone https://github.com/ruby/ruby.git</code>
-            <p>There are some other branches under development. Try the following command to see the list of branches:</p>
+          </div>
+          <p>
+            There are some other branches under development. Try the following
+            command to see the list of branches:
+          </p>
+          <div class="code">
             <code>$ git ls-remote https://github.com/ruby/ruby.git</code>
-            <p>You may also want to use git.ruby-lang.org/ruby.git (actual master of Ruby source) if you are a committer.</p>
-          </section>
-          <section class="main-section" id="subversion">
-            <header>Subversion</header>
-            <p>Stable branches for older Ruby versions can be checked out with the following command:</p>
-            <code>$ svn co https://svn.ruby-lang.org/repos/ruby/branches/ruby_2_6/ ruby</code>
-            <p>Try the following command to see the list of branches:</p>
+          </div>
+          <p>
+            You may also want to use git.ruby-lang.org/ruby.git (actual master
+            of Ruby source) if you are a committer.
+          </p>
+        </section>
+        <section class="main-section" id="subversion">
+          <header>Subversion</header>
+          <p>
+            Stable branches for older Ruby versions can be checked out with the
+            following command:
+          </p>
+          <div class="code">
+            <code
+              >$ svn co https://svn.ruby-lang.org/repos/ruby/branches/ruby_2_6/
+              ruby</code
+            >
+          </div>
+          <p>Try the following command to see the list of branches:</p>
+          <div class="code">
             <code>$ svn ls https://svn.ruby-lang.org/repos/ruby/branches/</code>
-          </section>
-          <section class="main-section" id="ruby_home_page">
-            <header>Ruby home page</header>
-            <a href="www.ruby-lang.org/">www.ruby-lang.org/</a>
-          </section>
-          <section class="main-section" id="mailing_list">
-            <header>Mailing list</header>
-            <p>There is a mailing list to discuss Ruby. To subscribe to this list, please send the following phrase:</p>
+          </div>
+        </section>
+        <section class="main-section" id="ruby_home_page">
+          <header>Ruby home page</header>
+          <a href="www.ruby-lang.org/">www.ruby-lang.org/</a>
+        </section>
+        <section class="main-section" id="mailing_list">
+          <header>Mailing list</header>
+          <p>
+            There is a mailing list to discuss Ruby. To subscribe to this list,
+            please send the following phrase:
+          </p>
+          <div class="code">
             <code>subscribe</code>
-            <p>in the mail body (not subject) to the address ruby-talk-request@ruby-lang.org.</p>
-          </section>
-          <section class="main-section" id="how_to_compile_and_install">
-            <header>How to compile and install</header>
-            <ol>
-              <li>If you want to use Microsoft Visual C++ to compile Ruby, read win32/README.win32 instead of this document.</li>
-              <li>If <span class="highlight">./configure</span> does not exist or is older than <span class="highlight">configure.ac</span>, run <span class="highlight">autoconf</span> to (re)generate configure.</li>
-              <li>
-                <p>Run <span class="highlight">./configure</span>, which will generate <span class="highlight">config.h</span> and <span class="highlight">Makefile</span>.</p>
-                <p>Some C compiler flags may be added by default depending on your environment. Specify <span class="highlight">optflags=..</span> and <span class="highlight">warnflags=..</span> as necessary to override them.</p>
-              </li>
-              <li>Edit <span class="highlight">include/ruby/defines.h</span> if you need. Usually this step will not be needed.</li>
-              <li>
-                <p>Remove comment mark(#) before the module names from <span class="highlight">ext/Setup</span> (or add module names if not present), if you want to link modules statically.</p>
-                <p>If you don't want to compile non static extension modules (probably on architectures which do not allow dynamic loading), remove comment mark from the line "<span class="highlight">#option nodynamic</span>" in <span class="highlight">ext/Setup</span>.</p>
-                <p>Usually this step will not be needed.</p>
-              </li>
-              <li>Run <span class="highlight">make</span>
-                <ul>
-                  <li>On Mac, set RUBY_CODESIGN environment variable with a signing identity. It uses the identity to sign <span class="highlight">ruby</span> binary. See also codesign(1).</li>
-                </ul>
-              </li>
-              <li>Optionally, run '<span class="highlight">make check</span>' to check whether the compiled Ruby interpreter works well. If you see the message "<span class="highlight">check succeeded</span>", your Ruby works as it should (hopefully).</li>
-              <li>Run '<span class="highlight">make install</span>'.</li>
-              <p>If you fail to compile Ruby, please send the detailed error report with the error log and machine/OS type, to help others.</p>
-              <p>Some extension libraries may not get compiled because of lack of necessary external libraries and/or headers, then you will need to run '<span class="highlight">make distclean-ext</span>' to remove old configuration after installing them in such case.</p>
-            </ol>
-          </section>
-          <section class="main-section" id="copying">
-            <header>Copying</header>
-            <p>See the file <a href="https://docs.ruby-lang.org/en/3.0.0/COPYING">COPYING</a>.</p>
-          </section>
-          <section class="main-section" id="feedback">
-            <header>Feedback</header>
-            <p>Questions about the Ruby language can be asked on the Ruby-Talk mailing list (<a href="https://www.ruby-lang.org/en/community/mailing-lists">www.ruby-lang.org/en/community/mailing-lists</a>) or on websites like (<a href="https://stackoverflow.com/">stackoverflow.com</a>).</p>
-            <p>Bugs should be reported at <a href="https://bugs.ruby-lang.org/">bugs.ruby-lang.org</a> . Read <a href="https://bugs.ruby-lang.org/projects/ruby/wiki/HowToReport">HowToReport</a> for more information.</p>
-          </section>
-          <section class="main-section" id="contributing">
-            <header>Contributing</header>
-            <p>See the file <a href="https://docs.ruby-lang.org/en/3.0.0/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
-          </section>
-          <section class="main-section" id="the_author">
-            <header>The Author</header>
-            <p>Ruby was originally designed and developed by Yukihiro Matsumoto (Matz) in 1995.</p>
-            <a href="matz@ruby-lang.org">matz@ruby-lang.org</a>
-          </section>
-        </main>
-        
-      </div>
-</body>
+          </div>
+          <p>
+            in the mail body (not subject) to the address
+            ruby-talk-request@ruby-lang.org.
+          </p>
+        </section>
+        <section class="main-section" id="how_to_compile_and_install">
+          <header>How to compile and install</header>
+          <ol>
+            <li>
+              If you want to use Microsoft Visual C++ to compile Ruby, read
+              win32/README.win32 instead of this document.
+            </li>
+            <li>
+              If <span class="highlight">./configure</span> does not exist or is
+              older than <span class="highlight">configure.ac</span>, run
+              <span class="highlight">autoconf</span> to (re)generate configure.
+            </li>
+            <li>
+              <p>
+                Run <span class="highlight">./configure</span>, which will
+                generate <span class="highlight">config.h</span> and
+                <span class="highlight">Makefile</span>.
+              </p>
+              <p>
+                Some C compiler flags may be added by default depending on your
+                environment. Specify
+                <span class="highlight">optflags=..</span> and
+                <span class="highlight">warnflags=..</span> as necessary to
+                override them.
+              </p>
+            </li>
+            <li>
+              Edit <span class="highlight">include/ruby/defines.h</span> if you
+              need. Usually this step will not be needed.
+            </li>
+            <li>
+              <p>
+                Remove comment mark(#) before the module names from
+                <span class="highlight">ext/Setup</span> (or add module names if
+                not present), if you want to link modules statically.
+              </p>
+              <p>
+                If you don't want to compile non static extension modules
+                (probably on architectures which do not allow dynamic loading),
+                remove comment mark from the line "<span class="highlight"
+                  >#option nodynamic</span
+                >" in <span class="highlight">ext/Setup</span>.
+              </p>
+              <p>Usually this step will not be needed.</p>
+            </li>
+            <li>
+              Run <span class="highlight">make</span>
+              <ul>
+                <li>
+                  On Mac, set RUBY_CODESIGN environment variable with a signing
+                  identity. It uses the identity to sign
+                  <span class="highlight">ruby</span> binary. See also
+                  codesign(1).
+                </li>
+              </ul>
+            </li>
+            <li>
+              Optionally, run '<span class="highlight">make check</span>' to
+              check whether the compiled Ruby interpreter works well. If you see
+              the message "<span class="highlight">check succeeded</span>", your
+              Ruby works as it should (hopefully).
+            </li>
+            <li>Run '<span class="highlight">make install</span>'.</li>
+            <p>
+              If you fail to compile Ruby, please send the detailed error report
+              with the error log and machine/OS type, to help others.
+            </p>
+            <p>
+              Some extension libraries may not get compiled because of lack of
+              necessary external libraries and/or headers, then you will need to
+              run '<span class="highlight">make distclean-ext</span>' to remove
+              old configuration after installing them in such case.
+            </p>
+          </ol>
+        </section>
+        <section class="main-section" id="copying">
+          <header>Copying</header>
+          <p>
+            See the file
+            <a href="https://docs.ruby-lang.org/en/3.0.0/COPYING">COPYING</a>.
+          </p>
+        </section>
+        <section class="main-section" id="feedback">
+          <header>Feedback</header>
+          <p>
+            Questions about the Ruby language can be asked on the Ruby-Talk
+            mailing list (<a
+              href="https://www.ruby-lang.org/en/community/mailing-lists"
+              >www.ruby-lang.org/en/community/mailing-lists</a
+            >) or on websites like (<a href="https://stackoverflow.com/"
+              >stackoverflow.com</a
+            >).
+          </p>
+          <p>
+            Bugs should be reported at
+            <a href="https://bugs.ruby-lang.org/">bugs.ruby-lang.org</a> . Read
+            <a href="https://bugs.ruby-lang.org/projects/ruby/wiki/HowToReport"
+              >HowToReport</a
+            >
+            for more information.
+          </p>
+        </section>
+        <section class="main-section" id="contributing">
+          <header>Contributing</header>
+          <p>
+            See the file
+            <a href="https://docs.ruby-lang.org/en/3.0.0/CONTRIBUTING.md"
+              >CONTRIBUTING.md</a
+            >
+          </p>
+        </section>
+        <section class="main-section" id="the_author">
+          <header>The Author</header>
+          <p>
+            Ruby was originally designed and developed by Yukihiro Matsumoto
+            (Matz) in 1995.
+          </p>
+          <a href="matz@ruby-lang.org">matz@ruby-lang.org</a>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
