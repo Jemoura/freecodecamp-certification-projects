@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
   </head>
@@ -14,27 +15,60 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
+    
     <section id="welcome-section">
-      <h1>Meu Portfolio</h1>
+      <div class="welcome-container">
+        <h1>Jorge Moura</h1>
+        <h3>Developer</h3>
+      </div>
     </section>
-
+    
     <section id="projects">
-      <div class="project-tile"><a href="">Projeto</a></div>
-      <div class="project-tile"><a href="">Projeto</a></div>
-      <div class="project-tile"><a href="">Projeto</a></div>
-      <div class="project-tile"><a href="">Projeto</a></div>
-      <div class="project-tile"><a href="">Projeto</a></div>
+      <h2>My Work</h2>
+      <div class="projects-container">
+        <div class="project-tile"><a href="https://jemourasds2.netlify.app/">
+            <div class="project-img" style="background-image: url('https://raw.githubusercontent.com/Jemoura/freecodecamp-certification-projects/main/ResponsiveWebDesign/PersonalPortfolio/img/dsdelivery.png');">
+            </div>
+            <p>DS Delivery</p>
+          </a></div>
+        <div class="project-tile"><a href="https://codepen.io/jemoura/full/JjRZgEw">
+            <div class="project-img" style="background-image: url('https://raw.githubusercontent.com/Jemoura/freecodecamp-certification-projects/main/ResponsiveWebDesign/PersonalPortfolio/img/santosdumont.png');">
+            </div>
+            <p>Tribute Page</p>
+          </a></div>
+        <div class="project-tile"><a href="https://codepen.io/jemoura/full/BaLeqWr">
+            <div class="project-img" style="background-image: url('https://raw.githubusercontent.com/Jemoura/freecodecamp-certification-projects/main/ResponsiveWebDesign/PersonalPortfolio/img/pesquisa.png');"></div>
+            <p>Survey Form</p>
+          </a></div>
+        <div class="project-tile"><a href="https://codepen.io/jemoura/full/KKNppvg">
+            <div class="project-img" style="background-image: url('https://raw.githubusercontent.com/Jemoura/freecodecamp-certification-projects/main/ResponsiveWebDesign/PersonalPortfolio/img/bolosecia.png');"></div>
+            <p>Product Landing Page</p>
+          </a></div>
+        <div class="project-tile"><a href="https://codepen.io/jemoura/full/KKNvePJ">
+            <div class="project-img" style="background-image: url('https://raw.githubusercontent.com/Jemoura/freecodecamp-certification-projects/main/ResponsiveWebDesign/PersonalPortfolio/img/rubydoc.png');"></div>
+            <p>Technical Documentation Page</p>
+          </a></div>
+      </div>
     </section>
-
+    
     <section id="contact">
-      <h2>Contato</h2>
-      <a id="profile-link" href="https://github.com/Jemoura" target="_blank">
-        <img src="" alt="imagem" />
-        <p>aaa</p>
-      </a>
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-link">
+          <a id="profile-link" href="https://github.com/Jemoura" target="_blank">
+            <i class="fab fa-3x fa-github"></i>
+            <p>Github</p>
+          </a>
+        </div>
+        <div class="contact-link">
+          <a id="profile-link" href="https://www.facebook.com/jorgeeduardo.moura/" target="_blank">
+            <i class="fab fa-3x fa-facebook"></i>
+            <p>Facebook</p>
+          </a>
+        </div>
+      </div>
     </section>
-
+    
     <footer>
       <p>&copy; 2021 - Jorge Eduardo Santos Moura</p>
     </footer>
